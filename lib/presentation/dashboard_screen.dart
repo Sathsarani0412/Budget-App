@@ -50,9 +50,6 @@ class _DashboardScreenState
     offset: const Offset(0, 5),
   );
 
-  // =====================================================
-  // FILTER LOGIC
-  // =====================================================
 
   bool _isInFilter(DateTime date) {
     final now = DateTime.now();
@@ -88,10 +85,7 @@ class _DashboardScreenState
         date.year == now.year;
   }
 
-  // =====================================================
-  // CALCULATE DATA
-  // =====================================================
-
+ 
   void _calculateData(List docs) {
 
     totalIncome = 0;
@@ -171,10 +165,7 @@ class _DashboardScreenState
             100;
   }
 
-  // =====================================================
-  // PIE CHART
-  // =====================================================
-
+ 
   List<PieChartSectionData> _buildPie() {
 
     if (categoryData.isEmpty) {
@@ -281,9 +272,7 @@ class _DashboardScreenState
 
                         const SizedBox(height: 10),
 
-                        // =================================
-                        // HEADER
-                        // =================================
+                        
 
                         Padding(
                           padding:
@@ -355,9 +344,7 @@ class _DashboardScreenState
 
                         const SizedBox(height: 10),
 
-                        // =================================
-                        // DROPDOWN
-                        // =================================
+                        
 
                         Padding(
                           padding:
@@ -441,9 +428,7 @@ class _DashboardScreenState
 
                         const SizedBox(height: 15),
 
-                        // =================================
-                        // BALANCE CARD
-                        // =================================
+                        
 
                         Padding(
                           padding:
@@ -567,10 +552,7 @@ class _DashboardScreenState
 
                             children: [
 
-                              // =======================
-                              // INCOME
-                              // =======================
-
+                              
                               Expanded(
 
                                 child:
@@ -690,10 +672,7 @@ class _DashboardScreenState
                               const SizedBox(
                                   width: 10),
 
-                              // =======================
-                              // EXPENSE
-                              // =======================
-
+                          
                               Expanded(
 
                                 child:
@@ -811,9 +790,7 @@ class _DashboardScreenState
 
                         const SizedBox(height: 20),
 
-                        // =================================
-                        // TITLE
-                        // =================================
+                      
 
                         const Padding(
                           padding:
@@ -839,9 +816,7 @@ class _DashboardScreenState
 
                         const SizedBox(height: 15),
 
-                        // =================================
-                        // PIE CHART
-                        // =================================
+                      
 
                         Padding(
 
